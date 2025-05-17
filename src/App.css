@@ -12,6 +12,12 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.Decider_Container {
+  position: absolute;
+  top: 500px;
+  left: 200px;
+}
+
 .Checklist_Button{
   position: absolute;
   bottom: 0%;
