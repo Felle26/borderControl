@@ -1,0 +1,29 @@
+.Passport_Container{
+  position: absolute;
+  top: 80px;
+  left: 100px;
+  border-radius: 10px;
+  width: 500px;
+  display: flex;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+  gap: 12px;
+  background-color: #5e8149;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.Checklist_Button{
+  position: absolute;
+  bottom: 0%;
+  right: 20px;
+  background-color: #4a6b3d;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: ease-in-out 0.3s;
+}
+.Checklist_Button:hover{
+  background-color: #4a6b2d;
+  animation: ease-in-out 0.3s;
+}
