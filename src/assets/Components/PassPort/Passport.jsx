@@ -16,7 +16,7 @@ export function Passport({ PassportData }) {
 
         <div className="passport_body">
           <div className="image_container">
-            <img src={PassportData.image} />
+            <img src={PassportData.Image} />
           </div>
           <div className="passport_details">
             <div className="passport_body_details">
