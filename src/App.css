@@ -9,26 +9,22 @@
   overflow: hidden;
   scroll-snap-type: x mandatory;
   gap: 12px;
-  background-color: #5e8149;
+  
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.Checklist_Button {
+.Checklist_Button_Container{
   position: absolute;
-  bottom: 0%;
-  right: 20px;
-  background-color: #4a6b3d;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
+  bottom: 20px;
+  right:50px;
+  
 }
 
-.Checklist_Button:hover {
-  background-color: #4a6b2d;
-  transition: 0.3s ease-in-out;
-}
+.Main_Menu-Button {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+} 
 
 .SelectPassPort_Container {
   position: absolute;
@@ -42,4 +38,10 @@ h1{
   top: 40px;
   transform: translate(-50%, -50%);
   font-size: 4rem;
+}
+.checklist_Container_Wrapper{
+  position: absolute;
+  bottom: 20px;
+  right:50px;
+
 }

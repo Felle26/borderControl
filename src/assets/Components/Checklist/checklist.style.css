@@ -1,16 +1,34 @@
 .checklist-container {
   color: #333333;
-  position: absolute;
-  right: 30px;
   width: 500px;
   height: 500px;
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
   background-color: rgb(255, 255, 181);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.checklist{
+  position: absolute;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  
 }
 
-.li{
+.Checklist_Title{
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #505050;
+  font-size: 3rem;
+}
+
+
+li{
+  color: #333333;
   list-style: none;
   padding: 10px;
   border-radius: 5px;

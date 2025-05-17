@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { Passport } from "./assets/Components/PassPort/Passport.jsx";
 import { Checklist } from "./assets/Components/Checklist/checklist.comp.jsx";
+import { MenuButton } from "./assets/Components/MenuButton/MenuButton.comp.jsx";
+import { FaBars } from "react-icons/fa";
 
 import "./App.css";
 import { getAllPassportSets } from "./assets/PassportService.js";
@@ -8,6 +10,7 @@ import { SelectPassPort } from "./assets/Components/SelectPassPort/SelectPassPor
 
 function App() {
   const [checklistVisible, setChecklistVisible] = useState(false);
+  const [mainMenuVisible, setMainMenuVisible] = useState(false);
 
   const [passportSetContent, setPassportSetContent] = useState([]);
   const [currentPassportSetIndex, setCurrentPassportSetIndex] = useState(0);
@@ -22,6 +25,9 @@ function App() {
   const handleChecklistToggle = () => {
     setChecklistVisible(!checklistVisible);
   };
+  const handleMainMenuToggle = () => {
+    setMainMenuVisible(!mainMenuVisible);
+  };
 
   useEffect(() => {
     const passportSets = getAllPassportSets();
@@ -31,6 +37,20 @@ function App() {
 
   return (
     <>
+      <div className="Main_Menu-Button">
+        <MenuButton text={<FaBars />} onClick={handleMainMenuToggle} />
+        {mainMenuVisible && (
+          <div className="Main_Menu">
+            <h1>Main Menu</h1>
+            <div className="Main_Menu_Buttons">
+              <MenuButton text={"New Game"} onClick={() => {}} />
+              <MenuButton text={"Load Game"} onClick={() => {}} />
+              <MenuButton text={"Settings"} onClick={() => {}} />
+              <MenuButton text={"Exit"} onClick={() => {}} />
+            </div>
+          </div>
+        )}
+      </div>
       <h1>Border Office</h1>
       <div className="Passport_Container">
         {currentPassportSet && (
@@ -42,7 +62,7 @@ function App() {
         )}
       </div>
       {checklistVisible && (
-        <div className="Checklist_Container">
+        <div className="checklist_Container_Wrapper">
           <Checklist
             checklistData={""}
             handleChecklistToggle={handleChecklistToggle}
@@ -52,10 +72,10 @@ function App() {
       <div className="SelectPassPort_Container">
         <SelectPassPort onSelect={onSelect} />
       </div>
-      <div className="Checklist">
-        <button className="Checklist_Button" onClick={handleChecklistToggle}>
-          Open Checklist
-        </button>
+      <div className="Checklist"></div>
+
+      <div className="Checklist_Button_Container">
+        <MenuButton text={"Show Checklist"} onClick={handleChecklistToggle} />
       </div>
     </>
   );
