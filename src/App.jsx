@@ -8,13 +8,7 @@ import { SelectPassPort } from "./assets/Components/SelectPassPort/SelectPassPor
 
 function App() {
   const [checklistVisible, setChecklistVisible] = useState(false);
-  const [checklistData, setChecklistData] = useState([
-    { id: 1, name: "Passport" },
-    { id: 2, name: "Visa" },
-    { id: 3, name: "Health Insurance" },
-    { id: 4, name: "Flight Ticket" },
-    { id: 5, name: "Hotel Reservation" },
-  ]);
+
   const [passportSetContent, setPassportSetContent] = useState([]);
   const [currentPassportSetIndex, setCurrentPassportSetIndex] = useState(0);
   const [currentPassportSet, setCurrentPassportSet] = useState(null);
@@ -26,7 +20,6 @@ function App() {
   };
 
   const handleChecklistToggle = () => {
-    console.log("Checklist button clicked");
     setChecklistVisible(!checklistVisible);
   };
 
@@ -51,7 +44,7 @@ function App() {
       {checklistVisible && (
         <div className="Checklist_Container">
           <Checklist
-            checklistData={checklistData}
+            checklistData={""}
             handleChecklistToggle={handleChecklistToggle}
           />
         </div>

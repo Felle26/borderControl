@@ -1,7 +1,8 @@
 .Passport_Container {
   position: absolute;
-  top: 80px;
-  left: 100px;
+  top: 300px;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 10px;
   width: 500px;
   display: flex;
@@ -21,16 +22,24 @@
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  animation: ease-in-out 0.3s;
+  transition: 0.3s ease-in-out;
 }
 
 .Checklist_Button:hover {
   background-color: #4a6b2d;
-  animation: ease-in-out 0.3s;
+  transition: 0.3s ease-in-out;
 }
 
 .SelectPassPort_Container {
   position: absolute;
-  top: 500px;
-  left: 200px;
+  transform: translate(-50%);
+  bottom: 0px;
+}
+
+h1{
+  color: #fff;
+  position:absolute;
+  top: 40px;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
 }
