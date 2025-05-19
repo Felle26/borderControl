@@ -7,6 +7,7 @@ import { FaBars } from "react-icons/fa";
 import "./App.css";
 import { getAllPassportSets } from "./assets/PassportService.js";
 import { SelectPassPort } from "./assets/Components/SelectPassPort/SelectPassPort.jsx";
+import { MainMenu } from "./assets/Components/MainMenu/MainMenu.comp.jsx";
 
 function App() {
   const [checklistVisible, setChecklistVisible] = useState(false);
@@ -39,18 +40,12 @@ function App() {
     <>
       <div className="Main_Menu-Button">
         <MenuButton text={<FaBars />} onClick={handleMainMenuToggle} />
-        {mainMenuVisible && (
-          <div className="Main_Menu">
-            <h1>Main Menu</h1>
-            <div className="Main_Menu_Buttons">
-              <MenuButton text={"New Game"} onClick={() => {}} />
-              <MenuButton text={"Load Game"} onClick={() => {}} />
-              <MenuButton text={"Settings"} onClick={() => {}} />
-              <MenuButton text={"Exit"} onClick={() => {}} />
-            </div>
-          </div>
-        )}
       </div>
+      {mainMenuVisible && (
+        <div className="Main_Menu_Container">
+          <MainMenu CloseMenuHandler={handleMainMenuToggle} />
+        </div>
+      )}
       <h1>Border Office</h1>
       <div className="Passport_Container">
         {currentPassportSet && (
