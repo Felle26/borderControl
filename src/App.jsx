@@ -30,6 +30,11 @@ function App() {
     setMainMenuVisible(!mainMenuVisible);
   };
 
+  const handleSelectPassport = () => {
+    // Handle the selection of a passport
+    console.log('Selected Passport ID: ');
+  }
+
   useEffect(() => {
     const passportSets = getAllPassportSets();
     setPassportSetContent(passportSets);
@@ -50,9 +55,27 @@ function App() {
       <div className="Passport_Container">
         {currentPassportSet && (
           <>
-            <Passport PassportData={currentPassportSet[0]} />
-            <Passport PassportData={currentPassportSet[1]} />
-            <Passport PassportData={currentPassportSet[2]} />
+            <div className="Passport_Wrapper">
+              <button
+                className="Passport_Select_button"
+                onClick={handleSelectPassport}
+              ></button>
+              <Passport PassportData={currentPassportSet[0]} />
+            </div>
+            <div className="Passport_Wrapper">
+              <button
+                className="Passport_Select_button"
+                onClick={handleSelectPassport}
+              ></button>
+              <Passport PassportData={currentPassportSet[1]} />
+            </div>
+            <div className="Passport_Wrapper">
+              <button
+                className="Passport_Select_button"
+                onClick={handleSelectPassport}
+              ></button>
+              <Passport PassportData={currentPassportSet[2]} />
+            </div>
           </>
         )}
       </div>
