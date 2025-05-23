@@ -20,13 +20,16 @@ function App() {
 
     return (
         <>
+            <div className="Main_Menu_Button">
+                <MenuButton text={<FaBars />} onClick={handleMainMenuToggle} />
+            </div>
             <div className="Main_Container">
                 <h1 className="Main_Headline">Border Office</h1>
                 <div className="Passport_Container">
                     <PassportList/>
                 </div>
                 {checklistVisible && (
-                    <div className="checklist_Container_Wrapper">
+                    <div className="Checklist_Container_Wrapper">
                         <Checklist
                             checklistData={""}
                             handleChecklistToggle={handleChecklistToggle}
@@ -34,6 +37,18 @@ function App() {
                     </div>
                 )}
             </div>
+            <div className="Checklist"></div>
+            <div className="Checklist_Button_Container">
+                <MenuButton
+                    text={checklistVisible ? "Hide Checklist" : "Show Checklist"}
+                    onClick={handleChecklistToggle}
+                />
+            </div>
+            {mainMenuVisible && (
+                <div className="Main_Menu_Container">
+                    <MainMenu CloseMenuHandler={handleMainMenuToggle} />
+                </div>
+            )}
         </>
     );
 }

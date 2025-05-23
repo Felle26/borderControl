@@ -91,29 +91,6 @@
   background-color: red;
 }
 
-.Passport_Select_button {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  cursor: pointer;
-  z-index: 100;
-  border: none;
-  outline: none;
-  transition: background-color 0.2s ease;
-}
-
-.Passport_Select_Button:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.Passport_Select_Button:focus {
-  outline: 2px solid rgba(255, 215, 0, 0.5);
-  outline-offset: 2px;
-}
-
 @keyframes pulse {
   0% {
     box-shadow: 0 0 60px rgba(255, 215, 0, 0.8);
