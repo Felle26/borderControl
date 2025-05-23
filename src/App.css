@@ -1,15 +1,14 @@
 
-
-
 .Passport_Container {
 
   display: flex;
   flex-direction: row;
+  margin-top: 15rem;
+  justify-content: center;
+  align-items: center;
   width:60vw;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 25%;
+  transform: translate(-0%, -50%);
+  
 }
 .Passport_Wrapper{
   transform: scale(.5);
@@ -32,7 +31,6 @@
 }
 
 .selected_Passport{
-  position: absolute;
   transform: translate(-50%, -50%);
   top: 10%;
   left: 50%;
@@ -43,10 +41,22 @@
 }
 
 .Checklist_Button_Container{
-  position: absolute;
-  bottom: 20px;
-  right:50px;
+  padding: 0;
+  display: flex;
+  justify-content: right;
+  bottom: 1rem;
+  right:2rem;
+  width: 100%;
+  height: 100%;
   
+}
+.Checklist_Button{
+  background-color: #ffffff00;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 100;
+  border:none;
+  outline: none;
 }
 
 .Main_Menu-Button {
@@ -63,7 +73,9 @@
 
 h1{
   color: #fff;
-  position:absolute;
+  position:relative;
+  display: flex;
+  justify-content: center;
   top: 40px;
   transform: translate(-50%, -50%);
   font-size: 4rem;

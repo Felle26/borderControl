@@ -120,7 +120,6 @@ function App() {
         <SelectPassPort onSelect={onSelect} />
       </div>
       <div className="Checklist"></div>
-
       <div className="Checklist_Button_Container">
         <MenuButton
           text={checklistVisible ? "Hide Checklist" : "Show Checklist"}
