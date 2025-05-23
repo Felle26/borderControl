@@ -1,33 +1,29 @@
 import "./Passport.css";
 import "./PassportBackside.css";
 
-export function PassportBackside({ PassportData }) {
-  return (
-    <>
-      <div className="passport">
-        <div className="passportback_body">
-          <div className="passportback_details">
-            <div className="passportback_body_details">
-              <p>Eye color:</p>
-              <p>{PassportData.EyeColor}</p>
-            </div>
-            <div className="passportback_body_details">
-              <p>Hair color:</p>
-              <p>{PassportData.HairColor}</p>
-            </div>
+export function PassportBackside({PassportData}) {
+    return (
+        <>
+            <div className="Passport_Back_Body">
+                <div className="Passport_Back_Footer_Details">
+                    <p>Eye color:</p>
+                    <p>{PassportData.EyeColor}</p>
+                </div>
+                <div className="Passport_Back_Footer_Details">
+                    <p>Hair color:</p>
+                    <p>{PassportData.HairColor}</p>
+                </div>
 
-            <div className="passportback_body_details">
-              <p>Height:</p>
-              <p>{PassportData.Height} cm</p>
+                <div className="Passport_Back_Footer_Details">
+                    <p>Height:</p>
+                    <p>{PassportData.Height} cm</p>
+                </div>
             </div>
-          </div>
-        </div>
-        <div className="passportback_footer">
-          <div className="passportback_footer_details">
-            <p>{PassportData.BacksideId}</p>
-          </div>
-        </div>
-      </div>
-    </>
-  );
+            <div className="Passport_Back_Footer">
+                <div className="Passport_Back_Footer_Details">
+                    <p>{PassportData.BacksideId}</p>
+                </div>
+            </div>
+        </>
+    );
 }

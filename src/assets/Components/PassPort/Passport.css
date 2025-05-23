@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-.passport {
+.Passport {
   flex: 0 0 100%;
   scroll-snap-align: start;
   scroll-snap-stop: always;
@@ -15,7 +15,8 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) inset;
   position: relative;
 }
-.passport_header {
+
+.Passport_Header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,7 +25,7 @@
   color: #fff;
 }
 
-.image_container {
+.Image_Container {
   width: 150px;
   height: 200px;
   border: 1px solid #000;
@@ -35,7 +36,7 @@
   left: 20px;
 }
 
-.passport_details {
+.Passport_Details {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -43,9 +44,10 @@
   top: 80px;
   left: 200px;
   width: 250px;
+  padding-top: 8px;
 }
 
-.passport_footer {
+.Passport_Footer {
   font-size: 10px;
   position: absolute;
   display: flex;
@@ -57,14 +59,13 @@
   width: 450px;
 }
 
-.passport_footer_details {
+.Passport_Footer_Details {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.flip_button {
-  position: absolute;
+.Flip_Button {
   width: 100%;
   height: 40px;
   background-color: orange;
@@ -72,7 +73,7 @@
   border-bottom-left-radius: 10px;
 }
 
-.flip_icon {
+.Flip_Icon {
   width: 34px;
   height: 34px;
 }
@@ -101,11 +102,11 @@
   transition: background-color 0.2s ease;
 }
 
-.Passport_Select_button:hover {
+.Passport_Select_Button:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.Passport_Select_button:focus {
+.Passport_Select_Button:focus {
   outline: 2px solid rgba(255, 215, 0, 0.5);
   outline-offset: 2px;
 }
@@ -129,12 +130,12 @@
   z-index: 100;
 }
 
-.selected_Passport .passport_highlight_wrapper {
+.Selected_Passport .Passport_Highlight_Wrapper {
   position: relative;
   transition: all 0.3s ease;
 }
 
-.selected_Passport .passport_highlight_wrapper.highlighted {
+.Selected_Passport .Passport_Highlight_Wrapper.highlighted {
   box-shadow: 0 0 30px rgba(255, 215, 0, 0.8);
   animation: pulse 1.5s infinite;
 }
@@ -150,3 +151,10 @@
     box-shadow: 0 0 60px rgba(255, 215, 0, 0.8);
   }
 }
+
+.Passport_Body_Details {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+

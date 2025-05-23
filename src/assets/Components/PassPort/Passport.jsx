@@ -18,7 +18,7 @@ export function Passport({PassportData, isHighlighted = true}) {
             {/*        isHighlighted ? "highlighted" : ""*/}
             {/*    }`}*/}
             {/*>*/}
-                <div className={`passport ${isFrontSideVisible ? "front" : "back"}`}>
+                <div className="Passport">
                     {isFrontSideVisible && (
                         <PassportFrontside PassportData={PassportData}/>
                     )}
@@ -27,17 +27,17 @@ export function Passport({PassportData, isHighlighted = true}) {
                     )}
                 </div>
             {/*</div>*/}
+            {/*<button*/}
+            {/*    // onClick={() => handleSelectPassport(index)}*/}
+            {/*    // aria-label={`Select passport ${index + 1}`}*/}
+            {/*/>*/}
             <button
-                // onClick={() => handleSelectPassport(index)}
-                // aria-label={`Select passport ${index + 1}`}
-            />
-            <button
-                // className="flip_button"
+                className="Flip_Button"
                 onClick={handleFlip}
                 aria-label={isFrontSideVisible ? "Show back side" : "Show front side"}
             >
                 <MdFlipCameraAndroid
-                    className={`flip_icon ${!isFrontSideVisible ? "flipped" : ""}`}
+                    className={`Flip_Icon ${!isFrontSideVisible ? "Flipped" : ""}`}
                 />
             </button>
         </>
