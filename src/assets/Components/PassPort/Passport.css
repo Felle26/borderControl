@@ -14,6 +14,8 @@
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) inset;
   position: relative;
+  margin: 0;
+  padding: 0;
 }
 
 .Passport_Header {
@@ -79,7 +81,6 @@
 }
 
 .Passport_Wrapper {
-  /*transform: scale(0.5);*/
   transition: all 0.2s ease;
   transform-origin: center;
   height: 340px;
@@ -157,4 +158,3 @@
   top: auto;
   left: auto;
 }
-
