@@ -33,6 +33,11 @@ function App() {
   };
 
   const handleSelectPassport = (currentPassport) => {
+    if (currentPassport === currentSelectedPassport) {
+      setCurrentSelectedPassport(null);
+      return;
+    }
+
     setCurrentSelectedPassport(currentPassport);
     // Handle the selection of a passport
     console.log('Selected Passport ID: ', currentSelectedPassport);
