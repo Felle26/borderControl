@@ -12,7 +12,7 @@ export function SelectPassPort({ onSelect }) {
         >
           <FaArrowUp className="decider-icon" />
         </button>
-        <span className="decider-label">Select matching PassPort</span>
+        <span className="decider-label">Continue with selected passport</span>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import "./PassportBackside.css";
 export function PassportBackside({ PassportData }) {
   return (
     <>
-      <div className="passportback">
+      <div className="passport">
         <div className="passportback_body">
           <div className="passportback_details">
             <div className="passportback_body_details">
@@ -12,7 +12,7 @@ export function PassportBackside({ PassportData }) {
               <p>{PassportData.EyeColor}</p>
             </div>
             <div className="passportback_body_details">
-              <p>Hair color::</p>
+              <p>Hair color:</p>
               <p>{PassportData.HairColor}</p>
             </div>
 

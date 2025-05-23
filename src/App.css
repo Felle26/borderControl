@@ -15,6 +15,8 @@
   transition: all 0.2s ease;
   transform-origin: center;
   height: 340px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .Passport_Select_button{
@@ -41,6 +43,29 @@
   transform-origin: center;
   z-index: 100;
 }
+
+.selected_Passport .passport_highlight_wrapper {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.selected_Passport .passport_highlight_wrapper.highlighted {
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.8);
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 60px rgba(255, 215, 0, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 100px rgba(255, 215, 0, 1);
+  }
+  100% {
+    box-shadow: 0 0 60px rgba(255, 215, 0, 0.8);
+  }
+}
+
 
 .Checklist_Button_Container{
   padding: 0;

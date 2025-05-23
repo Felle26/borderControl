@@ -1,5 +1,4 @@
-.decider {
-    display: flex;
+.SelectPassPort_Container {
     gap: 2rem;
     align-items: center;
     padding: 1.5rem;
@@ -7,7 +6,10 @@
     border-radius: 8px;
     background-color: #fafafa;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .decider::before {
