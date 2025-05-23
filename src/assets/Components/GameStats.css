@@ -1,0 +1,8 @@
+.Game_Stats_Box {
+  position: absolute;
+  right: 100px;
+  top: 10px;
+  height: 80px;
+  width: 400px;
+  border: solid black 2px;
+}
