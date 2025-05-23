@@ -8,14 +8,21 @@
   flex: 0 0 100%;
   scroll-snap-align: start;
   scroll-snap-stop: always;
-  width: 500px;
+  width: 516px;
   height: 300px;
   background-color: #5e8149;
-  border-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) inset;
   position: relative;
   margin: 0;
   padding: 0;
+  transition: box-shadow 0.3s ease;
+}
+
+.Passport_Single_Container.selected {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) inset,
+    0 0 0 4px rgba(255, 165, 0, 0.6) inset; /* Orange selection box */
 }
 
 .Passport_Header {
@@ -110,35 +117,6 @@
 .Passport_Select_Button:focus {
   outline: 2px solid rgba(255, 215, 0, 0.5);
   outline-offset: 2px;
-}
-
-.Selected_Passport {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  /*transform: translate(-50%, -50%) scale(1);*/
-  z-index: 1000;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-}
-
-.selected_Passport {
-  transform: translate(-50%, -50%);
-  top: 10%;
-  left: 50%;
-  /*transform: scale(1);*/
-  transition: all 0.2s ease;
-  transform-origin: center;
-  z-index: 100;
-}
-
-.Selected_Passport .Passport_Highlight_Wrapper {
-  position: relative;
-  transition: all 0.3s ease;
-}
-
-.Selected_Passport .Passport_Highlight_Wrapper.highlighted {
-  box-shadow: 0 0 30px rgba(255, 215, 0, 0.8);
-  animation: pulse 1.5s infinite;
 }
 
 @keyframes pulse {

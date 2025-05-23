@@ -16,11 +16,8 @@ export function PassportList() {
     setCurrentPassportSet(passportSetContent[nextIndex]);
   };
 
-  const handleFlip = () => {
-    setIsFrontSideVisible(!isFrontSideVisible);
-  };
-
   const handleSelectPassport = (currentPassport) => {
+    console.log("handleSelectPassport: " + currentPassport)
     if (currentPassport === currentSelectedPassport) {
       setCurrentSelectedPassport(null);
       return;
@@ -28,7 +25,7 @@ export function PassportList() {
 
     setCurrentSelectedPassport(currentPassport);
     // Handle the selection of a passport
-    console.log("Selected Passport ID: ", currentSelectedPassport);
+    console.log("Selected Passport ID: ", currentPassport);
   };
 
   useEffect(() => {
@@ -49,12 +46,15 @@ export function PassportList() {
             <div
               key={passport.Id}
               className={
-                currentSelectedPassport === index
+                currentSelectedPassport === passport.Id
                   ? "Passport_Single_Container Selected_Passport"
                   : "Passport_Single_Container"
               }
             >
-              <Passport PassportData={passport} />
+              <Passport
+                PassportData={passport}
+                handleSelectPassport={handleSelectPassport}
+              />
             </div>
           ))}
       </div>

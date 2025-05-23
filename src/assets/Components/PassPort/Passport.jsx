@@ -4,7 +4,7 @@ import { PassportBackside } from "./PassportBackside.jsx";
 import { useState } from "react";
 import { MdFlipCameraAndroid } from "react-icons/md";
 
-export function Passport({ PassportData, isHighlighted = true }) {
+export function Passport({ PassportData, handleSelectPassport }) {
   const [isFrontSideVisible, setIsFrontSideVisible] = useState(true);
 
   const handleFlip = () => {
@@ -18,7 +18,7 @@ export function Passport({ PassportData, isHighlighted = true }) {
       {/*        isHighlighted ? "highlighted" : ""*/}
       {/*    }`}*/}
       {/*>*/}
-      <button>
+      <button onClick={() => handleSelectPassport(PassportData.Id)}>
         <div className="Passport">
           {isFrontSideVisible && (
             <PassportFrontside PassportData={PassportData} />
