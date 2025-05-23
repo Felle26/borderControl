@@ -6,6 +6,7 @@ import {FaBars} from "react-icons/fa";
 import "./App.css";
 import {MainMenu} from "./assets/Components/MainMenu/MainMenu.comp.jsx";
 import {PassportList} from "./assets/Components/PassPort/PassportList.jsx";
+import { StoryBoard } from "./assets/Components/StoryBoard/StoryBoard.comp.jsx";
 
 function App() {
     const [checklistVisible, setChecklistVisible] = useState(false);
@@ -20,6 +21,7 @@ function App() {
 
     return (
         <>
+            <StoryBoard />
             <div className="Main_Menu_Button">
                 <MenuButton text={<FaBars />} onClick={handleMainMenuToggle} />
             </div>
