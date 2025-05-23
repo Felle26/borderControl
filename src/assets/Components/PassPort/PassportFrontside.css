@@ -54,15 +54,6 @@
   flex-direction: column;
 }
 
-.flip_button {
-  position: absolute;
-  width: 100%;
-  height: 40px;
-  background-color: orange;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
 .Passport_Wrapper {
   /*transform: scale(0.5);*/
   transition: all 0.2s ease;

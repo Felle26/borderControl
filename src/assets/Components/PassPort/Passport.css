@@ -82,6 +82,14 @@
   height: 34px;
 }
 
+.Submit_Button {
+  width: 100%;
+  height: 40px;
+  background-color: green;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
 .Passport_Wrapper {
   transition: all 0.2s ease;
   transform-origin: center;
@@ -107,4 +115,8 @@
   position: relative;
   top: auto;
   left: auto;
+}
+
+.Invisible {
+  visibility: hidden;
 }
