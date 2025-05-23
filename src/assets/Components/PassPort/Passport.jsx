@@ -1,54 +1,37 @@
 import "./Passport.css";
+import {PassportFrontside} from "./PassportFrontside.jsx";
+import {PassportBackside} from "./PassportBackside.jsx";
+import {useState} from "react";
+import {MdFlipCameraAndroid} from "react-icons/md";
 
-export function Passport({ PassportData }) {
+export function Passport({PassportData}) {
+    const [isFrontSideVisible, setIsFrontSideVisible] = useState(true);
 
-  return (
-    <>
-      <div className="passport">
-        <div className="passport_header">
-          <div className="passport_details_header">
-            <h2>{PassportData.Country}</h2>
-            <h2>{PassportData.PassportType}</h2>
-          </div>
+    const handleFlip = () => {
+        setIsFrontSideVisible(!isFrontSideVisible);
+    };
 
-          <h2>{PassportData.PassportNumber}</h2>
-        </div>
-
-        <div className="passport_body">
-          <div className="image_container">
-            <img src={PassportData.Image} />
-          </div>
-          <div className="passport_details">
-            <div className="passport_body_details">
-              <p>Name:</p>
-              <p>{PassportData.Name}</p>
+    return (
+        <>
+            <div className="passport_container">
+                <div className={`passport ${isFrontSideVisible ? "front" : "back"}`}>
+                    {isFrontSideVisible && (
+                        <PassportFrontside PassportData={PassportData}/>
+                    )}
+                    {!isFrontSideVisible && (
+                        <PassportBackside PassportData={PassportData}/>
+                    )}
+                </div>
             </div>
-            <div className="passport_body_details">
-              <p>Surname:</p>
-              <p>{PassportData.Surname}</p>
-            </div>
-
-            <div className="passport_body_details">
-              <p>Date of Birth:</p>
-              <p>{PassportData.DateOfBirth}</p>
-            </div>
-          </div>
-        </div>
-        <div className="passport_footer">
-          <div className="passport_footer_details">
-            <p>Issued By:</p>
-            <p>{PassportData.IssuedBy}</p>
-          </div>
-          <div className="passport_footer_details">
-            <p>Issue Date:</p>
-            <p>{PassportData.IssueDate}</p>
-          </div>
-          <div className="passport_footer_details">
-            <p>Expiry Date:</p>
-            <p>{PassportData.ExpiryDate}</p>
-          </div>
-        </div>
-      </div>
-    </>
-  );
+            <button
+                className="flip_button"
+                onClick={handleFlip}
+                aria-label={isFrontSideVisible ? "Show back side" : "Show front side"}
+            >
+                <MdFlipCameraAndroid
+                    className={`flip_icon ${!isFrontSideVisible ? "flipped" : ""}`}
+                />
+            </button>
+        </>
+    );
 }
