@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 7rem; 
-  right:10rem;
+  top: 11rem;
+  right: 10rem;
   width: 30rem;
   background-color: rgb(243, 198, 0);
   box-shadow: inset 0px 0px 10px rgba(105, 51, 0, 0.836);
