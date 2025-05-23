@@ -1,11 +1,11 @@
 .Passport_List_Container {
-  width: 100%;
   display: flex;
   flex-wrap: nowrap;
   gap: 20px;
+  flex-direction: column;
   padding: 20px;
   justify-content: flex-start;
-  overflow-x: auto;
+  overflow-y: auto;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none; /* IE and Edge */
