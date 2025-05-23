@@ -1,7 +1,6 @@
 import "./Passport.css";
 
-export function Passport({ PassportData }) {
-
+export function PassportFrontside({ PassportData }) {
   return (
     <>
       <div className="passport">
