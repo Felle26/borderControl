@@ -16,6 +16,11 @@ export function PassportList() {
     setCurrentPassportSet(passportSetContent[nextIndex]);
   };
 
+  const handleSubmit = (currentPassport) => {
+    console.log("handleSubmit: " + currentPassport.Id);
+    onSelect();
+  };
+
   const handleSelectPassport = (currentPassport) => {
     console.log("handleSelectPassport: " + currentPassport)
     if (currentPassport === currentSelectedPassport) {
@@ -54,6 +59,8 @@ export function PassportList() {
               <Passport
                 PassportData={passport}
                 handleSelectPassport={handleSelectPassport}
+                handleSubmit={handleSubmit}
+                IsSelected={currentSelectedPassport === passport.Id}
               />
             </div>
           ))}
