@@ -93,7 +93,10 @@ function App() {
       <div className="Checklist"></div>
 
       <div className="Checklist_Button_Container">
-        <MenuButton text={"Show Checklist"} onClick={handleChecklistToggle} />
+        <MenuButton
+          text={checklistVisible ? "Hide Checklist" : "Show Checklist"}
+          onClick={handleChecklistToggle}
+        />
       </div>
     </>
   );
