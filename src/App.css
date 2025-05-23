@@ -30,11 +30,11 @@
   z-index: 100;
 }
 
-.Passport_Wrapper:hover{
+/* .Passport_Wrapper:hover{
   transform: scale(1);
   transition: all 0.2s ease;
   transition-delay: 0.2s;
-}
+} */
 
 .Checklist_Button_Container{
   position: absolute;
