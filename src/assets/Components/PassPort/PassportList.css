@@ -1,0 +1,23 @@
+.Passport_List_Container {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: flex-start;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Optional: Hide scrollbar but keep functionality */
+.Passport_List_Container::-webkit-scrollbar {
+  display: none;
+}
+
+.Passport_Single_Container {
+  width: 500px;
+  height: 340px;
+}
