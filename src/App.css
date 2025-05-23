@@ -14,7 +14,6 @@
 .Passport_Wrapper{
   transform: scale(.5);
   transition: all 0.2s ease;
-  transition-delay: 0.2s;
   transform-origin: center;
 }
 
@@ -28,13 +27,20 @@
   border-radius: 10px;
   cursor: pointer;
   z-index: 100;
+  border:none;
+  outline: none;
 }
 
-/* .Passport_Wrapper:hover{
+.selected_Passport{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 10%;
+  left: 50%;
   transform: scale(1);
   transition: all 0.2s ease;
-  transition-delay: 0.2s;
-} */
+  transform-origin: center;
+  z-index: 100;
+}
 
 .Checklist_Button_Container{
   position: absolute;

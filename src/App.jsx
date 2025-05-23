@@ -17,6 +17,8 @@ function App() {
   const [currentPassportSetIndex, setCurrentPassportSetIndex] = useState(0);
   const [currentPassportSet, setCurrentPassportSet] = useState(null);
 
+  const [currentSelectedPassport, setCurrentSelectedPassport] = useState(null);
+
   const onSelect = () => {
     const nextIndex = currentPassportSetIndex + 1;
     setCurrentPassportSetIndex(nextIndex);
@@ -30,10 +32,13 @@ function App() {
     setMainMenuVisible(!mainMenuVisible);
   };
 
-  const handleSelectPassport = () => {
+  const handleSelectPassport = (currentPassport) => {
+    setCurrentSelectedPassport(currentPassport);
     // Handle the selection of a passport
-    console.log('Selected Passport ID: ');
+    console.log('Selected Passport ID: ', currentSelectedPassport);
   }
+
+  useEffect(() => { console.log( currentSelectedPassport); }, [currentSelectedPassport]);
 
   useEffect(() => {
     const passportSets = getAllPassportSets();
@@ -55,24 +60,48 @@ function App() {
       <div className="Passport_Container">
         {currentPassportSet && (
           <>
-            <div className="Passport_Wrapper">
+            <div
+              className={
+                currentSelectedPassport === 1
+                  ? "Passport_Wrapper selected_Passport"
+                  : "Passport_Wrapper"
+              }
+            >
               <button
                 className="Passport_Select_button"
-                onClick={handleSelectPassport}
+                onClick={() => {
+                  handleSelectPassport(1);
+                }}
               ></button>
               <Passport PassportData={currentPassportSet[0]} />
             </div>
-            <div className="Passport_Wrapper">
+            <div
+              className={
+                currentSelectedPassport === 2
+                  ? "Passport_Wrapper selected_Passport"
+                  : "Passport_Wrapper"
+              }
+            >
               <button
                 className="Passport_Select_button"
-                onClick={handleSelectPassport}
+                onClick={() => {
+                  handleSelectPassport(2);
+                }}
               ></button>
               <Passport PassportData={currentPassportSet[1]} />
             </div>
-            <div className="Passport_Wrapper">
+            <div
+              className={
+                currentSelectedPassport === 3
+                  ? "Passport_Wrapper selected_Passport"
+                  : "Passport_Wrapper"
+              }
+            >
               <button
                 className="Passport_Select_button"
-                onClick={handleSelectPassport}
+                onClick={() => {
+                  handleSelectPassport(3);
+                }}
               ></button>
               <Passport PassportData={currentPassportSet[2]} />
             </div>
