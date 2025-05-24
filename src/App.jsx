@@ -23,6 +23,7 @@ function App() {
     const nextIndex = currentPassportSetIndex + 1;
     setCurrentPassportSetIndex(nextIndex);
     setCurrentPassportSet(passportSetContent[nextIndex]);
+    setCurrentSelectedPassport(null);
 
     if (nextIndex === passportSetContent.length) {
       setIsGameEndScreen(true);
