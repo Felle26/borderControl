@@ -25,7 +25,7 @@ export function PassportBackside({PassportData}) {
                 </div>
             </div>
             <div className="Passport_Back_Countryflag">
-                <img src={PassportData.CountryFlag}/>
+                <img src={PassportData.CountryFlag} alt="Country Flag"/>
             </div>
         </>
     );
