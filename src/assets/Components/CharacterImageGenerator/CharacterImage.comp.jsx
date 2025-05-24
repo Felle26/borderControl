@@ -54,7 +54,7 @@ export function CharacterImage( {PassportData})
     console.log(randomNumber);
     switch (PassportData.HairColor) {
       case "black":
-        if (1+1 === 3) {
+        if (PassportData.Sex === "m") {
           Hair = Images.Hair.Hair_Short_Black;
         }
         else {
@@ -63,35 +63,29 @@ export function CharacterImage( {PassportData})
         }
         break;
       case "brown":
-        if (1+1 === 2) {
+        if (PassportData.Sex === "m") {
           Hair = Images.Hair.Hair_Short_Brown;
-        }
-        else {
+        } else {
           Hair = Images.Hair.Hair_Long_Brown;
-
         }
         break;
       case "blonde":
-        if (1+1 === 2) {
+        if (PassportData.Sex === "m") {
           Hair = Images.Hair.Hair_Short_Blonde;
-        }
-        else {
+        } else {
           Hair = Images.Hair.Hair_Long_Blonde;
-
         }
         break;
       case "red":
-        if (1+1 === 3) {
+        if (PassportData.Sex === "m") {
           Hair = Images.Hair.Hair_Short_Red;
-        }
-        else {
+        } else {
           Hair = Images.Hair.Hair_Long_Red;
-
         }
         break;
     }
 
-    if (PassportData.Sex === "male") {
+    if (PassportData.Sex === "m") {
       switch (randomNumber) {
         case 1:
             Beard = Images.Assets.Beard_1;
