@@ -13,7 +13,6 @@ export function PassportFrontside({PassportData}) {
 
             <div className="Passport_Body">
                 <div className="Image_Container">
-                    {/* <img src={PassportData.Image}/> */}
                     <CharacterImage PassportData={PassportData} />
                 </div>
                 <div className="Passport_Details">

@@ -1,0 +1,19 @@
+.Passport_Preview button {
+    all: unset;
+    display: contents;
+}
+
+.Passport_Preview {
+    background-color: white;
+}
+
+.Passport_Preview button:focus,
+.Passport_Preview button:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.Selected_Passport {
+    box-shadow: 0 0 0 10px rgba(255, 165, 0, 0.6);
+    z-index: 1;
+}

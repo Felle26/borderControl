@@ -3,7 +3,6 @@
   flex-wrap: nowrap;
   gap: 20px;
   flex-direction: column;
-  padding: 20px;
   justify-content: flex-start;
   overflow-y: auto;
   scroll-behavior: smooth;
@@ -25,7 +24,25 @@
   position: relative;
 }
 
-.Selected_Passport {
-  box-shadow: 0 0 0 10px rgba(255, 165, 0, 0.6);
-  z-index: 1;
+.Passport_Single_Preview_Container {
+  width: 520px;
+  height: 200px;
+  margin-bottom: 40px;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  position: relative;
+  max-width: 20%;
+  max-height: 20%;
+  overflow: hidden;
+  border: 1px solid #000;
+  margin-right: 20px;
+}
+
+.Passport_List_Preview {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
 }
