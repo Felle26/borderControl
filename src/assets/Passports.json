@@ -33,6 +33,8 @@
           "SkinColor": "fair",
           "Sex": "m",
           "Glasses": false,
+          "Beard": "No_Beard",
+          "Shirt": "Shirt_2",
           "BacksideId": "<D123456<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<901216M3001010DEU0567890<0MAX<<MUSTERMANN<<<<<<<<<<<<<"
         },
         {
@@ -54,6 +56,8 @@
           "SkinColor": "medium",
           "Sex": "f",
           "Glasses": true,
+          "Beard": "Beard_1",
+          "Shirt": "Shirt_3",
           "BacksideId": "<P789012<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<880523F2906159FRA9876543<1SOPHIE<DUBOIS<<<<<<<<<<<<<<"
         },
         {
@@ -75,6 +79,8 @@
           "SkinColor": "fair",
           "Sex": "m",
           "Glasses": true,
+          "Beard": "Beard_3",
+          "Shirt": "Shirt_1",
           "BacksideId": "<P345678<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<920830M3103017GBR1234567<8JAMES<WILSON<<<<<<<<<<<<<<<"
         }
       ]
@@ -112,6 +118,8 @@
           "SkinColor": "fair",
           "Sex": "f",
           "Glasses": false,
+          "Beard": "No_Beard",
+          "Shirt": "Shirt_2",
           "BacksideId": "<P901234<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<950412F3202153POL4567891<9ANNA<KOWALSKI<<<<<<<<<<<<<<"
         },
         {
@@ -133,6 +141,8 @@
           "SkinColor": "medium",
           "Sex": "m",
           "Glasses": true,
+          "Beard": "Beard_1",
+          "Shirt": "Shirt_3",
           "BacksideId": "<P567890<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<871108M3009208ITA7891234<5MARCO<ROSSI<<<<<<<<<<<<<<<<"
         },
         {
@@ -154,6 +164,8 @@
           "SkinColor": "fair",
           "Sex": "f",
           "Glasses": false,
+          "Beard": "No_Beard",
+          "Shirt": "Shirt_1",
           "BacksideId": "<P234567<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<930725F3111106DNK3216549<4EMMA<NIELSEN<<<<<<<<<<<<<<<"
         }
       ]
@@ -191,6 +203,8 @@
           "SkinColor": "fair",
           "Sex": "f",
           "Glasses": true,
+          "Beard": "No_Beard",
+          "Shirt": "Shirt_2",
           "BacksideId": "<P456789<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<910315F3105207JPN1234567<1YUKI<TANAKA<<<<<<<<<<<<<<<<"
         },
         {
@@ -212,6 +226,8 @@
           "SkinColor": "medium",
           "Sex": "m",
           "Glasses": false,
+          "Beard": "Beard_3",
+          "Shirt": "Shirt_1",
           "BacksideId": "<P890123<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<890730M3011152ESP9876543<2CARLOS<RODRIGUEZ<<<<<<<<<<<<"
         },
         {
@@ -233,6 +249,8 @@
           "SkinColor": "brown",
           "Sex": "f",
           "Glasses": true,
+          "Beard": "No_Beard",
+          "Shirt": "Shirt_3",
           "BacksideId": "<P345123<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<940922F3201105PRT4567891<0MARIA<SILVA<<<<<<<<<<<<<<<<<"
         }
       ]
@@ -270,6 +288,8 @@
           "SkinColor": "fair",
           "Sex": "m",
           "Glasses": false,
+          "Beard": "No_Beard",
+          "Shirt": "Shirt_2",
           "BacksideId": "<P678901<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<861205M2908256CHE7891234<3HANS<MUELLER<<<<<<<<<<<<<<<"
         },
         {
@@ -291,6 +311,8 @@
           "SkinColor": "fair",
           "Sex": "f",
           "Glasses": true,
+          "Beard": "No_Beard",
+          "Shirt": "Shirt_1",
           "BacksideId": "<P234890<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<930418F3107129RUS3216549<7ELENA<POPOV<<<<<<<<<<<<<<<<<"
         },
         {
@@ -312,6 +334,8 @@
           "SkinColor": "fair",
           "Sex": "m",
           "Glasses": false,
+          "Beard": "Beard_3",
+          "Shirt": "Shirt_3",
           "BacksideId": "<P567234<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<901128M3003151NOR6549873<6LARS<ANDERSEN<<<<<<<<<<<<<<<"
         }
       ]
@@ -349,6 +373,8 @@
           "SkinColor": "medium",
           "Sex": "m",
           "Glasses": true,
+          "Beard": "No_Beard",
+          "Shirt": "Shirt_2",
           "BacksideId": "<P789456<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<920614M3104205CHN9876543<2LI<WEI<<<<<<<<<<<<<<<<<<<<<<"
         },
         {
@@ -370,6 +396,8 @@
           "SkinColor": "brown",
           "Sex": "f",
           "Glasses": false,
+          "Beard": "No_Beard",
+          "Shirt": "Shirt_1",
           "BacksideId": "<P123789<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<940228F3203154ISR1234567<8SARAH<COHEN<<<<<<<<<<<<<<<"
         },
         {
@@ -391,6 +419,8 @@
           "SkinColor": "fair",
           "Sex": "m",
           "Glasses": true,
+          "Beard": "Beard_3",
+          "Shirt": "Shirt_3",
           "BacksideId": "<P456123<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<910917M3012102KOR7891234<5KIM<MIN-JUN<<<<<<<<<<<<<<"
         }
       ]
@@ -428,6 +458,8 @@
           "SkinColor": "medium",
           "Sex": "m",
           "Glasses": false,
+          "Beard": "No_Beard",
+          "Shirt": "Shirt_2",
           "BacksideId": "<P159852<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<900520M3111154QAT1234567<5MOHAMMED<AL-SAYED<<<<<<<<<<<"
         },
         {
@@ -449,6 +481,8 @@
           "SkinColor": "medium",
           "Sex": "f",
           "Glasses": true,
+          "Beard": "No_Beard",
+          "Shirt": "Shirt_1",
           "BacksideId": "<P753951<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<931208F3202207PAK9876543<2AISHA<KHAN<<<<<<<<<<<<<<<<<<<"
         },
         {
@@ -470,6 +504,8 @@
           "SkinColor": "medium",
           "Sex": "m",
           "Glasses": false,
+          "Beard": "Beard_3",
+          "Shirt": "Shirt_3",
           "BacksideId": "<P951852<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<890415M3009108IND6549873<4RAJ<SHARMA<<<<<<<<<<<<<<<<<<"
         }
       ]
@@ -507,6 +543,8 @@
           "SkinColor": "medium",
           "Sex": "f",
           "Glasses": true,
+          "Beard": "No_Beard",
+          "Shirt": "Shirt_2",
           "BacksideId": "<P852159<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<921025F3112155JPN9876543<1YUKI<NAKAMURA<<<<<<<<<<<<<<"
         },
         {
@@ -528,6 +566,8 @@
           "SkinColor": "medium",
           "Sex": "m",
           "Glasses": false,
+          "Beard": "Beard_1",
+          "Shirt": "Shirt_1",
           "BacksideId": "<P159753<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<910218M3107204CHN4567891<7WEI<ZHANG<<<<<<<<<<<<<<<<<<<"
         },
         {
@@ -549,6 +589,8 @@
           "SkinColor": "fair",
           "Sex": "m",
           "Glasses": true,
+          "Beard": "Beard_3",
+          "Shirt": "Shirt_3",
           "BacksideId": "<P753159<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<930830M3203159KOR3216549<6JI-HOON<KIM<<<<<<<<<<<<<<<<<<"
         }
       ]
@@ -586,6 +628,8 @@
           "SkinColor": "medium",
           "Sex": "f",
           "Glasses": false,
+          "Beard": "No_Beard",
+          "Shirt": "Shirt_2",
           "BacksideId": "<P951753<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<940622F3201207ARE3216549<8FATIMA<AL-QASIMI<<<<<<<<<<<"
         },
         {
@@ -607,6 +651,8 @@
           "SkinColor": "medium",
           "Sex": "m",
           "Glasses": true,
+          "Beard": "Beard_1",
+          "Shirt": "Shirt_1",
           "BacksideId": "<P753951<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<901115M3109155EGY6549873<2HASSAN<AL-MASRI<<<<<<<<<<<<"
         },
         {
@@ -628,6 +674,8 @@
           "SkinColor": "medium",
           "Sex": "f",
           "Glasses": false,
+          "Beard": "No_Beard",
+          "Shirt": "Shirt_3",
           "BacksideId": "<P159951<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<920928F3112103IRN1234567<9LEILA<RAHMANI<<<<<<<<<<<<<<<"
         }
       ]
