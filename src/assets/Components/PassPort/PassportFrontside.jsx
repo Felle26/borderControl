@@ -6,10 +6,8 @@ export function PassportFrontside({PassportData}) {
         <>
             <div className="Passport_Front_Header">
                 <div className="Passport_Details_Header">
-                    <h2>{PassportData.Country}</h2>
-                    <h2>{PassportData.PassportType}</h2>
+                    <h2>Identity Card</h2>
                 </div>
-
                 <h2>{PassportData.PassportNumber}</h2>
             </div>
 
