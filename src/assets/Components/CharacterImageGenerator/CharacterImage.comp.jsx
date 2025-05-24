@@ -45,13 +45,13 @@ export function CharacterImage( {PassportData})
       Eyes_Green: '/Char/Eye_Green.svg',
     },
     Skin: {
-      Skin_Brown: '/Char/Skin_Brown.svg',
-      Skin_Fair: '/Char/Skin_Fair.svg',
-      Skin_Medium: '/Char/Skin_Medium.svg',
+      Brown: '/Char/Skin_Brown.svg',
+      Fair: '/Char/Skin_Fair.svg',
+      Medium: '/Char/Skin_Medium.svg',
     }
   };
   const getImage = () => {
-    const randomNumber = Math.floor(Math.random() * 3) + 1;
+    
     console.log(PassportData.SkinColor);
     switch (PassportData.HairColor) {
       case "black":
@@ -87,12 +87,15 @@ export function CharacterImage( {PassportData})
     }
 
     if (PassportData.Sex === "m") {
-      switch (randomNumber) {
-        case 1:
+      switch (PassportData.Beard) {
+        case 'Beard_1':
             Beard = Images.Assets.Beard_1;
             break;
-        case 2:
+        case 'Beard_3':
           Beard = Images.Assets.Beard_3;
+          break;
+        case 'Beard_2':
+          Beard = Images.Assets.Beard_2;
           break;
         default:
           Beard = Images.Assets.Beard_No;
@@ -102,14 +105,14 @@ export function CharacterImage( {PassportData})
     else {
       Beard = Images.Assets.Beard_No;
     }
-    switch (randomNumber) {
-      case 1:
+    switch (PassportData.Shirt) {
+      case 'Shirt_1':
         Shirt = Images.Shirts.Shirt_1;
         break;
-      case 2:
+      case 'Shirt_2':
         Shirt = Images.Shirts.Shirt_2;
         break;
-      case 3:
+      case 'Shirt_3':
         Shirt = Images.Shirts.Shirt_3;
         break;
     }
@@ -125,14 +128,14 @@ export function CharacterImage( {PassportData})
 
     switch (PassportData.SkinColor) {
       case "brown":
-        Skin = Images.Skin.Skin_Brown;
+        Skin = Images.Skin.Brown;
         
         break;
       case "fair":
-        Skin = Images.Skin.Skin_Fair;
+        Skin = Images.Skin.Fair;
         break;
       case "medium":
-        Skin = Images.Skin.Skin_Medium;
+        Skin = Images.Skin.Medium;
 
         break;
     }
@@ -149,6 +152,7 @@ export function CharacterImage( {PassportData})
         Eyes = Images.Eyes.Eyes_Green;
         break;
     }
+    console.log(Skin);
     
     
   }
