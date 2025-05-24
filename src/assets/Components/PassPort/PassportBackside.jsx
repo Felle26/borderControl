@@ -18,6 +18,11 @@ export function PassportBackside({PassportData}) {
                     <p>Height:</p>
                     <p>{PassportData.Height} cm</p>
                 </div>
+
+                <div className="Passport_Back_Footer_Details">
+                    <p>Glasses:</p>
+                    <p>{PassportData.Glasses ? 'yes' : 'no'}</p>
+                </div>
             </div>
             <div className="Passport_Back_Footer">
                 <div className="Passport_Back_Footer_Details">

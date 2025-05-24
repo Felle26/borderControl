@@ -32,6 +32,11 @@ export function PassportFrontside({PassportData}) {
                         <p>Date of Birth:</p>
                         <p>{PassportData.DateOfBirth}</p>
                     </div>
+
+                    <div className="Passport_Body_Details">
+                        <p>Sex:</p>
+                        <p>{PassportData.Sex}</p>
+                    </div>
                 </div>
             </div>
             <div className="Passport_Footer">
