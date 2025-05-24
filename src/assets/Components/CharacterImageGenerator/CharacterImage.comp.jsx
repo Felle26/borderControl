@@ -44,7 +44,7 @@ export function CharacterImage( {PassportData})
       Eyes_Brown: '/Char/Eye_Brown.svg',
       Eyes_Green: '/Char/Eye_Green.svg',
     },
-    Skin: {
+    Skins: {
       Brown: '/Char/Skin_Brown.svg',
       Fair: '/Char/Skin_Fair.svg',
       Medium: '/Char/Skin_Medium.svg',
@@ -128,14 +128,14 @@ export function CharacterImage( {PassportData})
 
     switch (PassportData.SkinColor) {
       case "brown":
-        Skin = Images.Skin.Brown;
+        Skin = Images.Skins.Brown;
         
         break;
       case "fair":
-        Skin = Images.Skin.Fair;
+        Skin = Images.Skins.Fair;
         break;
       case "medium":
-        Skin = Images.Skin.Medium;
+        Skin = Images.Skins.Medium;
 
         break;
     }

@@ -25,7 +25,7 @@ export function GameEndscreen({ correctGuesses, faultyGuesses, timePlayed, onPla
   return (
     <div className="game-end-screen">
       <div className="end-screen-content">
-        <h1 className="game-over-title">Game Over!</h1>
+        <h1 className="game-over-title">Finished</h1>
 
         <div className={`stats-container ${showStats ? "show" : ""}`}>
           <div className="stat-box time-played">
