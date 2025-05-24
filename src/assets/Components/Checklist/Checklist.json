@@ -1,0 +1,30 @@
+{
+  "ChecklistSet": [
+    {
+      "ChecklistName": "Checklist 1",
+      "ChecklistItems": [
+        {
+          "ItemName": "Item 1",
+          "ItemDescription": "Description for Item 1"
+        },
+        {
+          "ItemName": "Item 2",
+          "ItemDescription": "Description for Item 2"
+        }
+      ]
+    },
+    {
+      "ChecklistName": "Checklist 2",
+      "ChecklistItems": [
+        {
+          "ItemName": "Item A",
+          "ItemDescription": "Description for Item A"
+        },
+        {
+          "ItemName": "Item B",
+          "ItemDescription": "Description for Item B"
+        }
+      ]
+    }
+  ]
+}
