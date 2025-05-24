@@ -68,7 +68,7 @@
           "Image": "https://flagcdn.com/w160/gb.png",
           "Status": "pending",
           "EyeColor": "brown",
-          "HairColor": "blonde",
+          "HairColor": "red",
           "Height": 178,
           "Address": "42 Oxford Street, London W1D 2AP, UK",
           "SkinColor": "fair",
@@ -296,7 +296,7 @@
           "Image": "https://flagcdn.com/w160/no.png",
           "Status": "pending",
           "EyeColor": "blue",
-          "HairColor": "blonde",
+          "HairColor": "red",
           "Height": 188,
           "Address": "Karl Johans gate 1, 0159 Oslo, Norway",
           "SkinColor": "fair",
@@ -352,7 +352,7 @@
           "Image": "https://flagcdn.com/w160/il.png",
           "Status": "pending",
           "EyeColor": "brown",
-          "HairColor": "brown",
+          "HairColor": "red",
           "Height": 165,
           "Address": "Rothschild Blvd 1, Tel Aviv-Yafo, Israel",
           "SkinColor": "olive",
@@ -382,7 +382,16 @@
     },
     {
       "story": {
-        "steps": []
+        "steps": [
+          "Check the Date of Birth",
+          "Check the Expiry Date",
+          "Check the Nationality",
+          "The Person has Black Hair",
+          "The Person is younger than 36",
+          "The Person is taller than 170cm",
+          "The Person has Brown Eyes"
+        ],
+        "matchingPassport": "P321654"
       },
       "passports": [
         {
@@ -449,7 +458,16 @@
     },
     {
       "story": {
-        "steps": []
+        "steps": [
+          "Check the Date of Birth",
+          "Check the Expiry Date",
+          "Check the Nationality",
+          "The Person has Black Hair",
+          "The Person is younger than 34",
+          "The Person is taller than 167cm",
+          "The Person has Brown Eyes"
+        ],
+        "matchingPassport": "P852963"
       },
       "passports": [
         {
@@ -516,7 +534,16 @@
     },
     {
       "story": {
-        "steps": []
+        "steps": [
+          "Check the Date of Birth",
+          "Check the Expiry Date",
+          "Check the Nationality",
+          "The Person has Blonde Hair",
+          "The Person is younger than 34",
+          "The Person is taller than 170cm",
+          "The Person has Blue Eyes"
+        ],
+        "matchingPassport": "P741852"
       },
       "passports": [
         {
@@ -583,7 +610,16 @@
     },
     {
       "story": {
-        "steps": []
+        "steps": [
+          "Check the Date of Birth",
+          "Check the Expiry Date",
+          "Check the Nationality",
+          "The Person has Brown Hair",
+          "The Person is younger than 31",
+          "The Person is taller than 166cm",
+          "The Person has Brown Eyes"
+        ],
+        "matchingPassport": "P741852"
       },
       "passports": [
         {
@@ -650,7 +686,16 @@
     },
     {
       "story": {
-        "steps": []
+        "steps": [
+          "Check the Date of Birth",
+          "Check the Expiry Date",
+          "Check the Nationality",
+          "The Person has Black Hair",
+          "The Person is older than 30",
+          "The Person is taller than 160cm",
+          "The Person has Brown Eyes"
+        ],
+        "matchingPassport": "P963741"
       },
       "passports": [
         {
@@ -717,7 +762,16 @@
     },
     {
       "story": {
-        "steps": []
+        "steps": [
+          "Check the Date of Birth",
+          "Check the Expiry Date",
+          "Check the Nationality",
+          "The Person has Black Hair",
+          "The Person is older than 35",
+          "The Person is taller than 174cm",
+          "The Person has Brown Eyes"
+        ],
+        "matchingPassport": "P951852"
       },
       "passports": [
         {
@@ -784,7 +838,16 @@
     },
     {
       "story": {
-        "steps": []
+        "steps": [
+          "Check the Date of Birth",
+          "Check the Expiry Date",
+          "Check the Nationality",
+          "The Person has Black Hair",
+          "The Person is older than 33",
+          "The Person is taller than 175cm",
+          "The Person has Brown Eyes"
+        ],
+        "matchingPassport": "P159753"
       },
       "passports": [
         {
@@ -801,7 +864,7 @@
           "Image": "https://flagcdn.com/w160/jp.png",
           "Status": "pending",
           "EyeColor": "brown",
-          "HairColor": "black",
+          "HairColor": "red",
           "Height": 170,
           "Address": "1-1-1 Chiyoda, Chiyoda City, Tokyo 100-0001, Japan",
           "SkinColor": "light",
@@ -851,7 +914,16 @@
     },
     {
       "story": {
-        "steps": []
+        "steps": [
+          "Check the Date of Birth",
+          "Check the Expiry Date",
+          "Check the Nationality",
+          "The Person has Black Hair",
+          "The Person is older than 32",
+          "The Person is taller than 165cm",
+          "The Person has Brown Eyes"
+        ],
+        "matchingPassport": "P159951"
       },
       "passports": [
         {
