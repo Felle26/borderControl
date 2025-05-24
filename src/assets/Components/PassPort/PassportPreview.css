@@ -5,6 +5,7 @@
 
 .Passport_Preview {
     background-color: white;
+    height: 150px
 }
 
 .Passport_Preview button:focus,
@@ -16,4 +17,21 @@
 .Selected_Passport {
     box-shadow: 0 0 0 10px rgba(255, 165, 0, 0.6);
     z-index: 1;
+}
+
+.Preview_Image_Container {
+    height: 150px;
+}
+
+.Preview_Image_Container .Image_Wrapper {
+    min-width: 0;
+    min-height: 0;
+    height: 150px;
+}
+
+.Preview_Image_Container .Image_Wrapper img {
+    position: absolute;
+    width: 100px;
+    object-fit: fill;
+    height: 150px;
 }
