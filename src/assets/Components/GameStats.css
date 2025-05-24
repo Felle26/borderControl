@@ -1,0 +1,105 @@
+.Game_Stats_Box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  min-width: 250px;
+  position: fixed;
+  top: 20px;
+  right: 120px;
+  z-index: 100;
+  background-color: #4a6b3d;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color: #fff;
+}
+
+.Game_Stats_Box .Officer_Icon {
+  color: #fff;
+  font-size: 2rem;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  margin-right: auto;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.Game_Stats_Box .Stats_Text {
+  display: inline-block;
+  margin-left: auto;
+  vertical-align: middle;
+}
+
+.Game_Stats_Box p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  margin: 0;
+  color: #fff;
+  min-height: 2rem;
+}
+
+.Game_Stats_Box p:first-of-type {
+  display: flex;
+  align-items: center;
+}
+
+.Game_Stats_Box span {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.Game_Stats_Box span:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(-4px);
+}
+
+/* Add icons to the stats */
+.Game_Stats_Box span:nth-child(1)::before {
+  content: "✓";
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.Game_Stats_Box span:nth-child(2)::before {
+  content: "⚠";
+  color: #ffc107;
+  font-weight: bold;
+}
+
+.Game_Stats_Box span:nth-child(3)::before {
+  content: "📊";
+  color: #2196f3;
+  font-weight: bold;
+}
+
+/* Add a subtle animation when stats change */
+@keyframes statUpdate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.Game_Stats_Box span.updating {
+  animation: statUpdate 0.3s ease;
+}

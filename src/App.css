@@ -1,120 +1,75 @@
+.Main_Container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 100vh; /* Take full viewport height */
+  box-sizing: border-box;
+}
 
 .Passport_Container {
-
-  display: flex;
-  flex-direction: row;
-  margin-top: 15rem;
-  justify-content: center;
-  align-items: center;
-  width:60vw;
-  transform: translate(-0%, -50%);
-  
-}
-.Passport_Wrapper{
-  transform: scale(.5);
-  transition: all 0.2s ease;
-  transform-origin: center;
-  height: 340px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  width: 600px;
+  margin-top: 20px;
+  height: calc(100vh - 200px); /* Subtract space for headline and padding */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  padding-right: 10px; /* Space for scrollbar */
 }
 
-.Passport_Select_button{
+/* Style the scrollbar */
+.Passport_Container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.Passport_Container::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.Passport_Container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.Passport_Container::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.Checklist_Button_Container {
   position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 300px;
-  background-color: #ffffff00;
-  cursor: pointer;
-  z-index: 100;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  border:none;
-  outline: none;
-}
-
-.selected_Passport{
-  transform: translate(-50%, -50%);
-  top: 10%;
-  left: 50%;
-  transform: scale(1);
-  transition: all 0.2s ease;
-  transform-origin: center;
-  z-index: 100;
-}
-
-.selected_Passport .passport_highlight_wrapper {
-  position: relative;
-  transition: all 0.3s ease;
-}
-
-.selected_Passport .passport_highlight_wrapper.highlighted {
-  box-shadow: 0 0 30px rgba(255, 215, 0, 0.8);
-  animation: pulse 1.5s infinite;
-}
-
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 60px rgba(255, 215, 0, 0.8);
-  }
-  50% {
-    box-shadow: 0 0 100px rgba(255, 215, 0, 1);
-  }
-  100% {
-    box-shadow: 0 0 60px rgba(255, 215, 0, 0.8);
-  }
-}
-
-
-.Checklist_Button_Container{
+  bottom: 20px;
+  right: 20px;
   padding: 0;
   display: flex;
   justify-content: right;
-  bottom: 1rem;
-  right:2rem;
-  width: 100%;
-  height: 100%;
-  
-}
-.Checklist_Button{
-  background-color: #ffffff00;
-  border-radius: 10px;
-  cursor: pointer;
   z-index: 100;
-  border:none;
-  outline: none;
 }
 
-.Main_Menu-Button {
+.Main_Menu_Button {
   position: absolute;
-  top: 100px;
-  right: 50px;
-} 
-
-.SelectPassPort_Container {
-  position: absolute;
-  transform: translate(-50%);
-  bottom: 0px;
+  top: 20px;
+  right: 20px;
 }
 
-h1{
+.Main_Headline {
   color: #fff;
-  position:relative;
-  display: flex;
-  justify-content: center;
-  top: 40px;
-  transform: translate(-50%, -50%);
-  font-size: 4rem;
+  font-size: clamp(2rem, 5vw, 4rem);
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  word-wrap: break-word;
 }
-.checklist_Container_Wrapper{
+
+.Checklist_Container_Wrapper {
   position: absolute;
   bottom: 20px;
-  right:50px;
-
+  right: 20px;
 }
 
-.Main_Menu_Container{
+.Main_Menu_Container {
   display: flex;
   position: absolute;
   top: 50%;

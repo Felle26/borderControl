@@ -1,0 +1,32 @@
+.Passport_List_Container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: flex-start;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.Passport_List_Container::-webkit-scrollbar {
+  display: none;
+}
+
+.Passport_Single_Container {
+  width: 520px;
+  height: 384px;
+  margin-bottom: 40px;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  position: relative;
+}
+
+.Selected_Passport {
+  box-shadow: 0 0 0 10px rgba(255, 165, 0, 0.6);
+  z-index: 1;
+  border-radius: 1px;
+}
