@@ -1,15 +1,17 @@
 .Passport_Back_Body {
-  height: 200px;
+  height: 220px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
   gap: 15px;
+  overflow: hidden;
 }
 
 .Passport_Back_Footer {
   height: 80px;
-  margin-top: 20px;
   border: 2px solid black;
   padding-left: 20px;
   padding-right: 20px;
