@@ -55,7 +55,7 @@ function App() {
     const passportSets = getAllPassportSets();
     setPassportSetContent(passportSets);
     setCurrentPassportSet(passportSets[currentPassportSetIndex]);
-  }, []);
+  }, [currentPassportSetIndex]);
 
   const restartGame = () => {
     setIsGameEndScreen(false);
@@ -69,9 +69,8 @@ function App() {
   // Add global click handler
   useEffect(() => {
     const handleGlobalClick = () => {
-      if (timerStartedOn === 0) {
-        setTimerStartedOn(new Date());
-        console.log("Timer started: ", new Date());
+      if (timerStartedOn <= 0) {
+        setTimerStartedOn(Math.floor(Date.now() / 1000));
       }
     };
 
@@ -82,7 +81,7 @@ function App() {
     return () => {
       document.removeEventListener("click", handleGlobalClick);
     };
-  }, []); // Empty dependency array means this runs once on mount
+  }, [timerStartedOn]); // Add timerStartedOn to dependencies to re-run effect when it changes
 
   return (
     <>
@@ -92,7 +91,11 @@ function App() {
           <GameEndscreen
             correctGuesses={correctGuesses}
             faultyGuesses={faultyGuesses}
-            timePlayed={timerStartedOn ? new Date() - timerStartedOn : 0}
+            timePlayed={
+              timerStartedOn
+                ? Math.floor(Date.now() / 1000) - timerStartedOn
+                : 0
+            }
             onPlayAgain={restartGame}
           />
         )}
