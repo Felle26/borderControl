@@ -13,11 +13,11 @@ export function CharacterImage( {PassportData})
   let Glasses = "Glasses_No"; // Default glasses type, can be changed based on PassportData
   let Shirt = "Shirt_1"; // Default shirt type, can be changed based on PassportData
   let Eyes = "Eyes_Blue"; // Default eye color, can be changed based on PassportData
-  let Skin = "Skin_White"; // Default
+  let Skin = "Skin_Fair"; // Default
 
   const Images = {
     Assets: {
-      Glasses_No: '/Char/Beard_No.svg',
+      Glasses_No: '/Char/Beard_2.svg',
       Glasses: '/Char/Glasses.svg',
       Beard_1: '/Char/Beard_1.svg',
       Beard_No: '/Char/Beard_2.svg',
@@ -46,12 +46,13 @@ export function CharacterImage( {PassportData})
     },
     Skin: {
       Skin_Brown: '/Char/Skin_Brown.svg',
-      Skin_White: '/Char/Skin_White.svg',
+      Skin_Fair: '/Char/Skin_Fair.svg',
+      Skin_Medium: '/Char/Skin_Medium.svg',
     }
   };
   const getImage = () => {
     const randomNumber = Math.floor(Math.random() * 3) + 1;
-    console.log(randomNumber);
+    console.log(PassportData.SkinColor);
     switch (PassportData.HairColor) {
       case "black":
         if (PassportData.Sex === "m") {
@@ -101,7 +102,7 @@ export function CharacterImage( {PassportData})
     else {
       Beard = Images.Assets.Beard_No;
     }
-    switch (PassportData.Shirt) {
+    switch (randomNumber) {
       case 1:
         Shirt = Images.Shirts.Shirt_1;
         break;
@@ -112,14 +113,31 @@ export function CharacterImage( {PassportData})
         Shirt = Images.Shirts.Shirt_3;
         break;
     }
+    
     switch (PassportData.Glasses) {
-      case "yes":
+      case true:
         Glasses = Images.Assets.Glasses;
         break;
-      case "no":
+      case false:
         Glasses = Images.Assets.Glasses_No;
         break;
     }
+
+    switch (PassportData.SkinColor) {
+      case "brown":
+        Skin = Images.Skin.Skin_Brown;
+        
+        break;
+      case "fair":
+        Skin = Images.Skin.Skin_Fair;
+        break;
+      case "medium":
+        Skin = Images.Skin.Skin_Medium;
+
+        break;
+    }
+      
+    
     switch (PassportData.EyeColor) {
       case "blue":
         Eyes = Images.Eyes.Eyes_Blue;
@@ -142,11 +160,11 @@ export function CharacterImage( {PassportData})
     <>
       <div className="Image_Wrapper">
         <img className="Hair" src={Hair} alt="" />
-        <img className="Glasses" src={Images.Assets.Glasses} alt="" />
-        <img className="Eyes" src={Images.Eyes.Eyes_Green} alt="" />
-        <img className="Beard" src={Images.Assets.Beard_No} alt="" />
-        <img className="Skin" src={Images.Skin.Skin_White} alt="" />
-        <img className="Shirt" src={Images.Shirts.Shirt_2} alt="" />
+        <img className="Glasses" src={Glasses} alt="" />
+        <img className="Eyes" src={Eyes} alt="" />
+        <img className="Beard" src={Beard} alt="" />
+        <img className="Skin" src={Skin} alt="" />
+        <img className="Shirt" src={Shirt} alt="" />
       </div>
     </>
   );

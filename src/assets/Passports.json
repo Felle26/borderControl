@@ -130,7 +130,7 @@
           "HairColor": "black",
           "Height": 175,
           "Address": "Via Roma 45, 00184 Rome, Italy",
-          "SkinColor": "olive",
+          "SkinColor": "medium",
           "Sex": "m",
           "Glasses": true,
           "BacksideId": "<P567890<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<871108M3009208ITA7891234<5MARCO<ROSSI<<<<<<<<<<<<<<<<"
@@ -188,7 +188,7 @@
           "HairColor": "black",
           "Height": 170,
           "Address": "1-1-1 Chiyoda, Chiyoda City, Tokyo 100-0001, Japan",
-          "SkinColor": "light",
+          "SkinColor": "fair",
           "Sex": "f",
           "Glasses": true,
           "BacksideId": "<P456789<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<910315F3105207JPN1234567<1YUKI<TANAKA<<<<<<<<<<<<<<<<"
@@ -209,7 +209,7 @@
           "HairColor": "brown",
           "Height": 180,
           "Address": "Calle Mayor 15, 28013 Madrid, Spain",
-          "SkinColor": "olive",
+          "SkinColor": "medium",
           "Sex": "m",
           "Glasses": false,
           "BacksideId": "<P890123<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<890730M3011152ESP9876543<2CARLOS<RODRIGUEZ<<<<<<<<<<<<"
@@ -230,7 +230,7 @@
           "HairColor": "brown",
           "Height": 167,
           "Address": "Rua Augusta 100, 1100-053 Lisbon, Portugal",
-          "SkinColor": "olive",
+          "SkinColor": "brown",
           "Sex": "f",
           "Glasses": true,
           "BacksideId": "<P345123<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<940922F3201105PRT4567891<0MARIA<SILVA<<<<<<<<<<<<<<<<<"
@@ -367,7 +367,7 @@
           "HairColor": "red",
           "Height": 165,
           "Address": "Rothschild Blvd 1, Tel Aviv-Yafo, Israel",
-          "SkinColor": "olive",
+          "SkinColor": "brown",
           "Sex": "f",
           "Glasses": false,
           "BacksideId": "<P123789<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<940228F3203154ISR1234567<8SARAH<COHEN<<<<<<<<<<<<<<<"
@@ -388,7 +388,7 @@
           "HairColor": "black",
           "Height": 178,
           "Address": "1 Sejong-daero, Jung-gu, Seoul 04521, South Korea",
-          "SkinColor": "light",
+          "SkinColor": "fair",
           "Sex": "m",
           "Glasses": true,
           "BacksideId": "<P456123<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<910917M3012102KOR7891234<5KIM<MIN-JUN<<<<<<<<<<<<<<"
@@ -504,7 +504,7 @@
           "HairColor": "red",
           "Height": 170,
           "Address": "1-1-1 Chiyoda, Chiyoda City, Tokyo 100-0001, Japan",
-          "SkinColor": "light",
+          "SkinColor": "medium",
           "Sex": "f",
           "Glasses": true,
           "BacksideId": "<P852159<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<921025F3112155JPN9876543<1YUKI<NAKAMURA<<<<<<<<<<<<<<"
@@ -546,7 +546,7 @@
           "HairColor": "black",
           "Height": 180,
           "Address": "1 Sejong-daero, Jung-gu, Seoul 04521, South Korea",
-          "SkinColor": "light",
+          "SkinColor": "fair",
           "Sex": "m",
           "Glasses": true,
           "BacksideId": "<P753159<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<930830M3203159KOR3216549<6JI-HOON<KIM<<<<<<<<<<<<<<<<<<"
