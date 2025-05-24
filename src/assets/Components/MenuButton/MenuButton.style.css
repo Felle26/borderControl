@@ -1,4 +1,4 @@
-.menu-button {
+.Menu_Button {
   background-color: #4a6b3d;
   color: #fff;
   padding: 10px 20px;
@@ -7,7 +7,7 @@
   transition: 0.3s ease-in-out;
 }
 
-.menu-button:hover {
+.Menu_Button:hover {
   background-color: #4a6b2d;
   transition: 0.3s ease-in-out;
 }
