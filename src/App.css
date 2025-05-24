@@ -37,22 +37,6 @@
   background: rgba(255, 255, 255, 0.4);
 }
 
-.Checklist_Button_Container {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  padding: 0;
-  display: flex;
-  justify-content: right;
-  z-index: 100;
-}
-
-.Main_Menu_Button {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
 .Main_Headline {
   color: #fff;
   font-size: clamp(2rem, 5vw, 4rem);
@@ -61,22 +45,4 @@
   width: 100%;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   word-wrap: break-word;
-}
-
-.Checklist_Container_Wrapper {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-}
-
-.Main_Menu_Container {
-  display: flex;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #f0f0f0;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  z-index: 1000;
 }
