@@ -10,7 +10,7 @@
 }
 
 .Passport_Container {
-  width: 600px;
+  width: 800px;
   margin-top: 20px;
   height: calc(100vh - 200px); /* Subtract space for headline and padding */
   overflow-y: auto; /* Enable vertical scrolling */

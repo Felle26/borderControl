@@ -6,16 +6,13 @@ export function PassportFrontside({PassportData}) {
         <>
             <div className="Passport_Front_Header">
                 <div className="Passport_Details_Header">
-                    <h2>{PassportData.Country}</h2>
-                    <h2>{PassportData.PassportType}</h2>
+                    <h2>Identity Card</h2>
                 </div>
-
                 <h2>{PassportData.PassportNumber}</h2>
             </div>
 
             <div className="Passport_Body">
                 <div className="Image_Container">
-                    {/* <img src={PassportData.Image}/> */}
                     <CharacterImage PassportData={PassportData} />
                 </div>
                 <div className="Passport_Details">
@@ -31,6 +28,11 @@ export function PassportFrontside({PassportData}) {
                     <div className="Passport_Body_Details">
                         <p>Date of Birth:</p>
                         <p>{PassportData.DateOfBirth}</p>
+                    </div>
+
+                    <div className="Passport_Body_Details">
+                        <p>Sex:</p>
+                        <p>{PassportData.Sex}</p>
                     </div>
                 </div>
             </div>

@@ -16,7 +16,7 @@ function App() {
   const [currentPassportSet, setCurrentPassportSet] = useState(null);
 
   const [currentSelectedPassport, setCurrentSelectedPassport] = useState(null);
-  const [isGameEndScreen, setIsGameEndScreen] = useState(true);
+  const [isGameEndScreen, setIsGameEndScreen] = useState(false);
   const [timerStartedOn, setTimerStartedOn] = useState(0);
 
   const onSelect = () => {

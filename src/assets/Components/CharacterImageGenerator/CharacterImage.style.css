@@ -1,38 +1,45 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-.Image_Wrapper{
-  box-shadow: inset 0 0 0 2px #464646;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 150px;
-  min-height: 200px;
-}
-.Image_Wrapper img{
-  position: absolute;
-  width: 150px;
-  height: 200px;
-  object-fit:fill;
+
+.Image_Wrapper {
+    box-shadow: inset 0 0 0 2px #464646;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 150px;
+    min-height: 200px;
 }
 
-.Shirt{
-  z-index: 1;
+.Image_Wrapper img {
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    object-fit: fill;
 }
-.Skin{
-  z-index: 2;
+
+.Shirt {
+    z-index: 1;
 }
-.Beard{
-  z-index: 3;
+
+.Skin {
+    z-index: 2;
 }
-.Eyes{
-  z-index: 4;
+
+.Beard {
+    z-index: 3;
 }
-.Glasses{
-  z-index: 5;
+
+.Eyes {
+    z-index: 4;
 }
-.Hair{
-  z-index: 6;
+
+.Glasses {
+    z-index: 5;
+}
+
+.Hair {
+    z-index: 6;
 }

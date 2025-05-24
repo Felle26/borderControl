@@ -1,25 +1,25 @@
 import "./Passport.css";
 import {PassportFrontside} from "./PassportFrontside.jsx";
 import {PassportBackside} from "./PassportBackside.jsx";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {MdFlipCameraAndroid} from "react-icons/md";
 import {FaCheckCircle} from "react-icons/fa";
 
-export function Passport({PassportData, handleSelectPassport, handleSubmit, IsSelected}) {
+export function Passport({PassportData, handleSubmit}) {
     const [isFrontSideVisible, setIsFrontSideVisible] = useState(true);
 
     const handleFlip = () => {
         setIsFrontSideVisible(!isFrontSideVisible);
     };
 
-    const handleSelect = () => {
-        handleSelectPassport(PassportData.Id);
-    }
+    useEffect(() => {
+        console.log("current passport data: " + PassportData)
+    }, [PassportData]);
 
     return (
         <>
             <button
-                className={`Submit_Button ${!IsSelected ? "Invisible" : ""}`}
+                className="Submit_Button"
                 onClick={() => handleSubmit(PassportData)}
                 aria-label="Select passport for choice"
             >
@@ -27,16 +27,14 @@ export function Passport({PassportData, handleSelectPassport, handleSubmit, IsSe
                     className={`Flip_Icon ${!isFrontSideVisible ? "Flipped" : ""}`}
                 />
             </button>
-            <button onClick={() => handleSelect(PassportData.Id)}>
-                <div className="Passport">
-                    {isFrontSideVisible && (
-                        <PassportFrontside PassportData={PassportData}/>
-                    )}
-                    {!isFrontSideVisible && (
-                        <PassportBackside PassportData={PassportData}/>
-                    )}
-                </div>
-            </button>
+            <div className="Passport">
+                {isFrontSideVisible && (
+                    <PassportFrontside PassportData={PassportData}/>
+                )}
+                {!isFrontSideVisible && (
+                    <PassportBackside PassportData={PassportData}/>
+                )}
+            </div>
             <button
                 className="Flip_Button"
                 onClick={handleFlip}
