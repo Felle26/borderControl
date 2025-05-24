@@ -24,14 +24,13 @@
 }
 
 .Image_Container {
+  display: flex;
+  margin: 10px;
   width: 150px;
   height: 200px;
   border: 1px solid #000;
   border-radius: 5px;
-  overflow: hidden;
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
+
 }
 
 .Passport_Details {

@@ -1,4 +1,5 @@
 import "./PassportFrontside.css";
+import{ CharacterImage} from "../CharacterImageGenerator/CharacterImage.comp.jsx";
 
 export function PassportFrontside({PassportData}) {
     return (
@@ -14,7 +15,8 @@ export function PassportFrontside({PassportData}) {
 
             <div className="Passport_Body">
                 <div className="Image_Container">
-                    <img src={PassportData.Image}/>
+                    {/* <img src={PassportData.Image}/> */}
+                    <CharacterImage PassportData={PassportData} />
                 </div>
                 <div className="Passport_Details">
                     <div className="Passport_Body_Details">
