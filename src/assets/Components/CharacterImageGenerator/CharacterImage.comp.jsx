@@ -51,8 +51,6 @@ export function CharacterImage( {PassportData})
     }
   };
   const getImage = () => {
-    
-    console.log(PassportData.SkinColor);
     switch (PassportData.HairColor) {
       case "black":
         if (PassportData.Sex === "m") {
@@ -152,9 +150,6 @@ export function CharacterImage( {PassportData})
         Eyes = Images.Eyes.Eyes_Green;
         break;
     }
-    console.log(Skin);
-    
-    
   }
   getImage();
   // You can use PassportData to dynamically change the images if needed

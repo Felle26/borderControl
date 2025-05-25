@@ -30,101 +30,108 @@ function App() {
     }
   };
 
-  const handleSubmit = (currentPassport) => {
-    if (currentPassport.Id === currentPassportSet.story.matchingPassport) {
-      setCorrectGuesses(correctGuesses + 1);
-    } else {
-      setFaultyGuesses(faultyGuesses + 1);
-    }
 
-    onSelect();
-  };
+    
+  
 
-  const handleSelectPassport = (currentPassport) => {
-    console.log("handleSelectPassport: " + currentPassport);
-    if (currentPassport === currentSelectedPassport) {
-      setCurrentSelectedPassport(null);
-      return;
-    }
-
-    setCurrentSelectedPassport(currentPassport);
-    // Handle the selection of a passport
-    console.log("Selected Passport ID: ", currentPassport);
-  };
-
-  useEffect(() => {
-    const passportSets = getAllPassportSets();
-    setPassportSetContent(passportSets);
-    setCurrentPassportSet(passportSets[currentPassportSetIndex]);
-  }, [currentPassportSetIndex]);
-
-  const restartGame = () => {
-    setIsGameEndScreen(false);
-    setCorrectGuesses(0);
-    setFaultyGuesses(0);
-    setCurrentPassportSetIndex(0);
-    setCurrentPassportSet(passportSetContent[0]);
-    setTimerStartedOn(0);
-  };
-
-  // Add global click handler
-  useEffect(() => {
-    const handleGlobalClick = () => {
-      if (timerStartedOn <= 0) {
-        setTimerStartedOn(Math.floor(Date.now() / 1000));
+    const handleSubmit = (currentPassport) => {
+      if (currentPassport.Id === currentPassportSet.story.matchingPassport) {
+        setCorrectGuesses(correctGuesses + 1);
+      } else {
+        setFaultyGuesses(faultyGuesses + 1);
       }
+
+      onSelect();
     };
 
-    // Add the event listener
-    document.addEventListener("click", handleGlobalClick);
+    const handleSelectPassport = (currentPassport) => {
+      console.log("handleSelectPassport: " + currentPassport);
+      if (currentPassport === currentSelectedPassport) {
+        setCurrentSelectedPassport(null);
+        return;
+      }
 
-    // Cleanup function to remove the event listener
-    return () => {
-      document.removeEventListener("click", handleGlobalClick);
+      setCurrentSelectedPassport(currentPassport);
+      // Handle the selection of a passport
+      console.log("Selected Passport ID: ", currentPassport);
     };
-  }, [timerStartedOn]); // Add timerStartedOn to dependencies to re-run effect when it changes
 
-  return (
-    <>
-      <div className="Main_Container">
-        <h1 className="Main_Headline">Border Office</h1>
-        {isGameEndScreen && (
-          <GameEndscreen
-            correctGuesses={correctGuesses}
-            faultyGuesses={faultyGuesses}
-            timePlayed={
-              timerStartedOn
-                ? Math.floor(Date.now() / 1000) - timerStartedOn
-                : 0
-            }
-            onPlayAgain={restartGame}
-          />
-        )}
-        {!isGameEndScreen && (
-          <>
-            <div className="Passport_Container">
+    useEffect(() => {
+      const passportSets = getAllPassportSets();
+      setPassportSetContent(passportSets);
+      setCurrentPassportSet(passportSets[currentPassportSetIndex]);
+    }, [currentPassportSetIndex]);
+
+    const restartGame = () => {
+      setIsGameEndScreen(false);
+      setCorrectGuesses(0);
+      setFaultyGuesses(0);
+      setCurrentPassportSetIndex(0);
+      setCurrentPassportSet(passportSetContent[0]);
+      setTimerStartedOn(0);
+    };
+
+    // Add global click handler
+    useEffect(() => {
+      const handleGlobalClick = () => {
+        if (timerStartedOn <= 0) {
+          setTimerStartedOn(Math.floor(Date.now() / 1000));
+        }
+      };
+
+      // Add the event listener
+      document.addEventListener("click", handleGlobalClick);
+
+      // Cleanup function to remove the event listener
+      return () => {
+        document.removeEventListener("click", handleGlobalClick);
+      };
+    }, [timerStartedOn]); // Add timerStartedOn to dependencies to re-run effect when it changes
+  
+
+    return (
+      <>
+        <div className="Main_Container">
+          <h1 className="Main_Headline">Border Office</h1>
+          {isGameEndScreen && (
+            <GameEndscreen
+            
+              correctGuesses={correctGuesses}
+              faultyGuesses={faultyGuesses}
+              timePlayed={
+                timerStartedOn
+                  ? Math.floor(Date.now() / 1000) - timerStartedOn
+                  : 0
+              }
+              onPlayAgain={restartGame}
+            />
+          )}
+          {!isGameEndScreen && (
+            <>
+              <div className="Passport_Container">
+                {currentPassportSet && (
+                  <PassportList
+                    currentPassportSet={currentPassportSet.passports}
+                    currentSelectedPassport={currentSelectedPassport}
+                    handleSelectPassport={handleSelectPassport}
+                    handleSubmit={handleSubmit}
+                  />
+                )}
+              </div>
               {currentPassportSet && (
-                <PassportList
-                  currentPassportSet={currentPassportSet.passports}
-                  currentSelectedPassport={currentSelectedPassport}
-                  handleSelectPassport={handleSelectPassport}
-                  handleSubmit={handleSubmit}
-                />
+                <StoryBoard StoryBoardData={currentPassportSet.story} />
               )}
-            </div>
-            {currentPassportSet && (
-              <StoryBoard StoryBoardData={currentPassportSet.story} />
-            )}
-          </>
-        )}
-      </div>
-      <GameStats
-        correctCheckedPassport={correctGuesses}
-        faultyCheckedPassport={faultyGuesses}
-        remainingPassports={passportSetContent.length - currentPassportSetIndex}
-      />
-    </>
-  );
-}
+            </>
+          )}
+        </div>
+        <GameStats
+          correctCheckedPassport={correctGuesses}
+          faultyCheckedPassport={faultyGuesses}
+          remainingPassports={passportSetContent.length - currentPassportSetIndex}
+        />
+      </>
+    );
+  }
+
 
 export default App;

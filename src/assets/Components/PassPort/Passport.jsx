@@ -8,8 +8,11 @@ import {FaCheckCircle} from "react-icons/fa";
 export function Passport({PassportData, handleSubmit}) {
     const [isFrontSideVisible, setIsFrontSideVisible] = useState(true);
 
+    let turnPassport = new Audio("./Sounds/card-turn.wav");
+
     const handleFlip = () => {
         setIsFrontSideVisible(!isFrontSideVisible);
+        turnPassport.play();
     };
 
     useEffect(() => {
