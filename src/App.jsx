@@ -6,6 +6,7 @@ import { GameStats } from "./assets/Components/GameStats.jsx";
 import { getAllPassportSets } from "./assets/PassportService.js";
 import { StoryBoard } from "./assets/Components/StoryBoard/StoryBoard.comp.jsx";
 import { GameEndscreen } from "./assets/Components/GameEndscreen.jsx";
+import { SplashScreen } from "./assets/Components/CreditScreen/SplashScreen.comp.jsx";
 
 function App() {
   const [correctGuesses, setCorrectGuesses] = useState(0);
@@ -19,6 +20,10 @@ function App() {
   const [isGameEndScreen, setIsGameEndScreen] = useState(false);
   const [timerStartedOn, setTimerStartedOn] = useState(0);
 
+  const [showSplashScreen, setShowSplashScreen] = useState(true);
+
+  const [PlayTheme, setPlayTheme] = useState(false);
+
   const onSelect = () => {
     const nextIndex = currentPassportSetIndex + 1;
     setCurrentPassportSetIndex(nextIndex);
@@ -29,6 +34,8 @@ function App() {
       setIsGameEndScreen(true);
     }
   };
+
+ 
 
 
     
@@ -45,7 +52,7 @@ function App() {
     };
 
     const handleSelectPassport = (currentPassport) => {
-      console.log("handleSelectPassport: " + currentPassport);
+      // console.log("handleSelectPassport: " + currentPassport);
       if (currentPassport === currentSelectedPassport) {
         setCurrentSelectedPassport(null);
         return;
@@ -53,7 +60,7 @@ function App() {
 
       setCurrentSelectedPassport(currentPassport);
       // Handle the selection of a passport
-      console.log("Selected Passport ID: ", currentPassport);
+      // console.log("Selected Passport ID: ", currentPassport);
     };
 
     useEffect(() => {
@@ -69,6 +76,8 @@ function App() {
       setCurrentPassportSetIndex(0);
       setCurrentPassportSet(passportSetContent[0]);
       setTimerStartedOn(0);
+      setShowSplashScreen(false);
+      setPlayTheme(true);
     };
 
     // Add global click handler
@@ -91,6 +100,12 @@ function App() {
 
     return (
       <>
+        {showSplashScreen && (
+          <div className="Splash_Screen_Container">
+            <SplashScreen restartGame={restartGame} />
+          </div>)
+        }
+
         <div className="Main_Container">
           <h1 className="Main_Headline">Border Office</h1>
           {isGameEndScreen && (
