@@ -3,9 +3,6 @@
     {
       "story": {
         "steps": [
-          "Check the Date of Birth",
-          "Check the Expiry Date",
-          "Check the Nationality",
           "The Person has Brown Hair",
           "The Person is older than 25",
           "The Person is taller than 170cm",
@@ -88,9 +85,6 @@
     {
       "story": {
         "steps": [
-          "Check the Date of Birth",
-          "Check the Expiry Date",
-          "Check the Nationality",
           "The Person has Blonde Hair",
           "The Person is older than 30",
           "The Person is taller than 170cm",
@@ -173,9 +167,6 @@
     {
       "story": {
         "steps": [
-          "Check the Date of Birth",
-          "Check the Expiry Date",
-          "Check the Nationality",
           "The Person has Black Hair",
           "The Person is older than 33",
           "The Person is taller than 168cm",
@@ -258,9 +249,6 @@
     {
       "story": {
         "steps": [
-          "Check the Date of Birth",
-          "Check the Expiry Date",
-          "Check the Nationality",
           "The Person has Brown Hair",
           "The Person is older than 31",
           "The Person is taller than 170cm",
@@ -343,9 +331,6 @@
     {
       "story": {
         "steps": [
-          "Check the Date of Birth",
-          "Check the Expiry Date",
-          "Check the Nationality",
           "The Person has Black Hair",
           "The Person is older than 30",
           "The Person is taller than 170cm",
@@ -428,9 +413,6 @@
     {
       "story": {
         "steps": [
-          "Check the Date of Birth",
-          "Check the Expiry Date",
-          "Check the Nationality",
           "The Person has Black Hair",
           "The Person is older than 35",
           "The Person is taller than 174cm",
@@ -513,9 +495,6 @@
     {
       "story": {
         "steps": [
-          "Check the Date of Birth",
-          "Check the Expiry Date",
-          "Check the Nationality",
           "The Person has Black Hair",
           "The Person is older than 33",
           "The Person is taller than 175cm",
@@ -598,9 +577,6 @@
     {
       "story": {
         "steps": [
-          "Check the Date of Birth",
-          "Check the Expiry Date",
-          "Check the Nationality",
           "The Person has Black Hair",
           "The Person is older than 32",
           "The Person is taller than 165cm",
