@@ -21,7 +21,7 @@ export function SplashScreen({restartGame}) {
         </p>
 
         <p className="Splash_paragraph">
-          This game was created as part of the
+          This game was created as part of the&nbsp;
           <br />
           <a href="https://reactjam.com"> ReactJam 2025</a>.
         </p>
