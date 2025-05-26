@@ -1,0 +1,74 @@
+.audio-control-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  color: #fff;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.audio-control-button.needs-interaction {
+  background: rgba(33, 150, 243, 0.2);
+  border-color: rgba(33, 150, 243, 0.4);
+  animation: pulse-attention 2s infinite;
+}
+
+.audio-control-button:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.audio-control-button.needs-interaction:hover {
+  background: rgba(33, 150, 243, 0.3);
+}
+
+.audio-control-button:active {
+  transform: scale(0.95);
+}
+
+/* Add a subtle pulse animation when music is playing */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    box-shadow: 0 4px 25px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Add an attention-grabbing pulse animation for the play button */
+@keyframes pulse-attention {
+  0% {
+    box-shadow: 0 4px 15px rgba(33, 150, 243, 0.2);
+  }
+  50% {
+    box-shadow: 0 4px 25px rgba(33, 150, 243, 0.4);
+  }
+  100% {
+    box-shadow: 0 4px 15px rgba(33, 150, 243, 0.2);
+  }
+}
+
+.audio-control-button:not([aria-label="Mute"]) {
+  animation: pulse 2s infinite;
+}
+
+.audio-control-button.needs-interaction {
+  animation: pulse-attention 2s infinite;
+}
